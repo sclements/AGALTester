@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AGAL Tester</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+    <script src="agal.js"></script>
+</head>
+<body>
+<a href="http://jsfiddle.net/kCKy8/">Fiddle of shader in javascript</a>
+<h3>Fragment Shader</h3>
+<div class="input">
+    <b>Input
+        <select id="in_reg">
+            <option value="ft0">FT0</option>
+            <option value="ft1">FT1</option>
+            <option value="ft2">FT2</option>
+            <option value="ft3">FT3</option>
+        </select>:</b>
+    <input id="ri" value="1"/>
+    <input id="gi" value="1"/>
+    <input id="bi" value="1"/>
+    <input id="ai" value="1"/>
+    <div class="color" id="show_input"><div/></div>
+</div>
+<div>
+    <div><b>Context Setup:</b></div>
+    <textarea id="context"></textarea>
+</div>
+<div>
+    <div><b>Fragment Shader:</b></div>
+    <textarea id="fragment" wrap="off"></textarea>
+    <textarea id="fragment_result" readonly="true"></textarea>
+</div>
+<div>
+    <button id="run">Test</button>
+</div>
+<div class="output">
+    <b>Output
+        <select id="out_reg">
+            <option value="ft0">FT0</option>
+            <option value="ft1">FT1</option>
+            <option value="ft2">FT2</option>
+            <option value="ft3">FT3</option>
+            <option value="ft4">FT4</option>
+            <option value="ft5">FT5</option>
+            <option value="ft6">FT6</option>
+            <option value="ft7">FT7</option>
+        </select>:</b>
+    <input readonly="true" id="ro"/>
+    <input readonly="true" id="go"/>
+    <input readonly="true" id="bo"/>
+    <input readonly="true" id="ao"/>
+    <div class="color" id="show_output"><div/></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.color {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 1em;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%);
+}
+
+.color div {
+    width: inherit;
+    height: inherit;
+}
+
+input {
+    width: 20px;
+}
+
+textarea#context {
+    width: 800px;
+    height: 80px;
+}
+
+textarea#fragment {
+    width: 600px;
+    height: 200px;
+    display: inline-block;
+}
+
+textarea#fragment_result {
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+    background-color: #EEE;
+    display: inline-block;
+}
+
